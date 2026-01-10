@@ -1,0 +1,15 @@
+# config/train.yaml
+data:
+  path: "data/dataset.csv"
+  target: "Exited"
+
+split:
+  test_size: 0.2
+  random_state: 42
+  stratify: true
+
+model:
+  name: "logistic_regression"
+  max_iter: 3000
+  class_weight: "balanced"   # utile si classes déséquilibrées
+  solver: "liblinear"        # bon choix pour classification binaire
