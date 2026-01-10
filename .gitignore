@@ -1,4 +1,4 @@
-data/
-artifacts/
-.venv/
+data/*
+artifacts/*
+.venv/*
 .ipynb_checkpoints
