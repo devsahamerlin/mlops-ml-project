@@ -1,4 +1,14 @@
-artifacts/*
-.venv/*
-.ipynb_checkpoints
-**__pycache__
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+# Jupyter
+.ipynb_checkpoints/
+# Data & artifacts (ne pas versionner)
+data/
+artifacts/
+logs/
+# OS
+.DS_Store
+Thumbs.db
