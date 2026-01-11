@@ -8,9 +8,28 @@ source .venv/bin/activate
 touch .gitignore
 vi .gitignore 
 
+pip install -r requirements.txt
 jupyter lab 
 
 ```
+
+## Entraînement
+```shell
+python3 scripts/train.py
+```
+
+## Évaluation
+```shell
+python3 scripts/evaluate.py
+```
+
+## Liste des artifacts
+
+- artifacts/model.joblib
+- artifacts/metrics.json
+- artifacts/confusion_matrix.png
+- artifacts/report.json
+
 
 ## Commandes
 ```shell
@@ -37,7 +56,6 @@ git add README.md
 git commit -m "docs: add installation and git command in README file"
 
 git checkout -b feature/evolutions
-pip install -r requirements.txt
 
 git add .
 git commit -m "core: structure et installation des dépendances"
@@ -54,4 +72,3 @@ cat artifacts/report.json
 ![Results](images/artifacts.png)
 
 
-## Liste des artifacts
