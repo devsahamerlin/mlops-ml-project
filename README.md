@@ -41,6 +41,17 @@ pip install -r requirements.txt
 
 git add .
 git commit -m "core: structure et installation des dépendances"
+
+export PYTHONPATH="${PYTHONPATH}:$(pwd)"
+
+python3 scripts/train.py
+ls -l artifacts
+cat artifacts/metrics.json
+python3 scripts/evaluate.py
+
+cat artifacts/report.json
 ```
+![Results](images/artifacts.png)
+
 
 ## Liste des artifacts
