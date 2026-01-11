@@ -56,7 +56,7 @@ git commit -m "feat: add train, evaluate and config files"
 
 git branch -M main
 git remote add origin https://github.com/devsahamerlin/mlops-ml-project.git
-
+git remote -v
 git push -u origin main
 
 git checkout -b dev
@@ -81,4 +81,12 @@ python3 scripts/evaluate.py
 cat artifacts/report.json
 ```
 
+## Tags & release 
+```shell
+git checkout main
+git merge dev
+git tag -a v0.1.0 -m "Baseline model (train/eval OK)"
+git push origin main
+git push origin --tags
+```
 
