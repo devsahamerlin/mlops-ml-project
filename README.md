@@ -30,6 +30,17 @@ python3 scripts/evaluate.py
 - artifacts/confusion_matrix.png
 - artifacts/report.json
 
+![Results](images/artifacts.png)
+
+## Git log
+```shell
+git status
+git diff
+git log --oneline --graph --decorate --all
+```
+
+![Git log](images/git.png)
+
 
 ## Commandes
 ```shell
@@ -69,6 +80,5 @@ python3 scripts/evaluate.py
 
 cat artifacts/report.json
 ```
-![Results](images/artifacts.png)
 
 
