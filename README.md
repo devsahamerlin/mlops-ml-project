@@ -84,9 +84,13 @@ cat artifacts/report.json
 ## Tags & release 
 ```shell
 git checkout main
-git merge dev
+git pull origin main
 git tag -a v0.1.0 -m "Baseline model (train/eval OK)"
 git push origin main
 git push origin --tags
 ```
 
+## Rapports
+```shell
+
+```
